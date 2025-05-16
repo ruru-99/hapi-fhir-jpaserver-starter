@@ -166,6 +166,19 @@
             <artifactId>hapi-fhir-keycloak</artifactId>
             <version>0.0.7-SNAPSHOT</version>
         </dependency>
+
+         <!-- This dependency holds all the code extensions that OpenSRP will build on top of Hapi-Fhir-->
+        <dependency>
+            <groupId>org.smartregister.hapi-fhir-opensrp-extensions</groupId>
+            <artifactId>location</artifactId>
+            <version>0.0.4-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.smartregister.hapi-fhir-opensrp-extensions</groupId>
+            <artifactId>practitioner</artifactId>
+            <version>0.0.4-SNAPSHOT</version>
+        </dependency>
              
         <!-- This dependency is used to include the IPS Base Implementation -->
         <dependency>

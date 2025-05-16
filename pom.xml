@@ -160,6 +160,13 @@
             <version>${project.parent.version}</version>
             <classifier>classes</classifier>
         </dependency>
+
+         <dependency>
+            <groupId>org.smartregister</groupId>
+            <artifactId>hapi-fhir-keycloak</artifactId>
+            <version>0.0.7-SNAPSHOT</version>
+        </dependency>
+             
         <!-- This dependency is used to include the IPS Base Implementation -->
         <dependency>
             <groupId>ca.uhn.hapi.fhir</groupId>

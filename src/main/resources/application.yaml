@@ -355,3 +355,13 @@ hapi:
 #  protocol: 'http'
 #  schema_management_strategy: CREATE
 #  username: SomeUsername
+keycloak:
+  auth-server-url: https://keycloak.docmode.org/realms/docmode-srp/protocol/openid-connect/auth
+  realm: docmode-srp
+  resource: fhir-web
+  credentials:
+    secret: GaLSbwen79IjkyzdiSbfk3xwP4oxCPdu
+  ssl-required: external
+#  use-resource-role-mappings: true,
+logging.level.org.springframework.web: trace
+logging.level.org.apache: trace

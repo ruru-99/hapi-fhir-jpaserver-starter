@@ -22,7 +22,7 @@ import java.util.Objects;
 public class AppProperties {
 
   private Boolean cql_enabled = false;
-  private Boolean openapi_enabled = false;
+  private Boolean openapi_enabled = true;
   private Boolean mdm_enabled = false;
   private boolean advanced_lucene_indexing = false;
   private boolean enable_index_of_type = false;
@@ -55,7 +55,7 @@ public class AppProperties {
   private Integer defer_indexing_for_codesystems_of_size = 100;
   private Long retain_cached_searches_mins = 60L;
   private Long reuse_cached_search_results_millis = 60000L;
-  private String server_address = "https://hapi-fhir.docmode.org/fhir";
+  private String server_address = "http://hapi-fhir.docmode.org/fhir";
   private EncodingEnum default_encoding = EncodingEnum.JSON;
   private FhirVersionEnum fhir_version = FhirVersionEnum.R4;
   private ClientIdStrategyEnum client_id_strategy = ClientIdStrategyEnum.ALPHANUMERIC;
@@ -823,8 +823,8 @@ public class AppProperties {
       private String from;
       private String host;
       private Integer port = 25;
-      private String username;
-      private String password;
+      private String username = "admin";
+      private String password = "clin*{5s";
       private Boolean auth = false;
       private Boolean startTlsEnable = false;
       private Boolean startTlsRequired = false;

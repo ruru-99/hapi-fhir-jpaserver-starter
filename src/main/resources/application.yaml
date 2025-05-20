@@ -156,7 +156,7 @@ hapi:
         fhir_version: R4
       global:
         name: Global Tester
-        server_address: "http://hapi.fhir.org/baseR4"
+        server_address: "https://hapi-fhir.docmode.org/fhir"
         refuse_to_fetch_third_party_urls: false
         fhir_version: R4
     #    validation:
@@ -199,11 +199,11 @@ hapi:
 #security:
 #  ignored: none
 keycloak:
-  auth-server-url: http://localhost:8180/auth/
-  realm: fhir-core
+  auth-server-url: https://keycloak.docmode.org/realms/docmode-srp/protocol/openid-connect/auth
+  realm: docmode-srp
   resource: fhir-core-server
   credentials:
-    secret: b7747a19-f72f-4906-8892-8438ce2492be
+    secret: GaLSbwen79IjkyzdiSbfk3xwP4oxCPdu
   ssl-required: external
 #  use-resource-role-mappings: true,
 logging.level.org.springframework.web: trace
